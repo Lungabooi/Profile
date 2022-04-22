@@ -1,0 +1,225 @@
+/* css reset */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*Navigation style  */
+li.nav-link {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.about-image{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.about-text{
+    padding: 30px;
+    margin: 20px;
+}
+ul.nav-links{
+    text-align: right;    
+}
+nav#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+
+}
+
+/*Landing styles  */
+#landing{
+}
+section{
+    min-height: 100vh;
+    background-color: cornflowerblue;
+}
+
+section:nth-last-of-type(even){
+    background-color: rgb(160, 135, 95);
+}
+
+#home{
+    background-image: url("./LUNGA.PNG");
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+    font-size:50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    position: center;
+}
+h4{
+    font-size: 50px;
+    text-shadow: 3px 3px 3px white;
+}
+h1{
+    text-shadow: 3px 3px 3px white;
+    font-size: 68px;
+}
+
+#about{
+    background-image: url("./sunset.jpg");
+    text-shadow: 3px 3px 3px white;
+    display:flex;
+    background-color: rgb(211, 208, 208);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* margin: 1rem; */
+
+    
+}
+#skill-container{
+    display: flex;
+    align-items:center;
+    float: left;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+#resume{
+    background-color:white ;
+}
+.resume-heading{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.resume-row{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Education{
+    font-size: 15px;
+}
+
+#heading{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    float: left;
+    flex-direction: column;
+    width: 70%;
+}
+img{
+    width: 300px;
+}
+
+#work{
+    background-color: blue;
+}
+#portfolio{
+    background-image: url("./notes.jpg");
+}
+
+#portfolio-container > .images{
+    margin: 15px;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+
+}
+
+
+
+#contact{
+    background-image: url("./email.png");
+}
+#contact-container{
+    padding: 10px;
+    margin: 30px;
+}
+.contact-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#form{
+    display: flex;
+}
+#contact-text{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: nowrap;
+    padding:50px;
+}
+#button{
+    font-size: 20px;
+
+}
+.nav-button{
+    display: none;
+}
+
+
+@media only screen and (max-width: 550px) {
+    /* For mobile phones: */
+    .nav-links{
+      display: none;
+    }
+    
+    .nav-button{
+        display: block;
+    }
+    .about-image{
+        display: flex;
+        justify-content: column;
+        position: center;
+        
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
