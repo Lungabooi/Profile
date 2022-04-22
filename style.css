@@ -209,9 +209,11 @@ img{
     .about-image{
         display: flex;
         justify-content: column;
-        position: center;
-        
+        flex-wrap: wrap;
+        /* position: center;  */
+
     }
+
 }
 @media (max-width: 500px) {
     .container {
